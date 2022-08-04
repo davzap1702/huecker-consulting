@@ -1,0 +1,14 @@
+//base
+@use 'base/reset';
+@use 'base/utilities';
+//component
+@use 'components/buttons';
+//layout
+@use 'layout/header';
+@use 'layout/footer';
+//pages
+@use 'pages/home';
+//vendors
+@use 'vendors/normalize';
+//animations
+@use 'animations/animations';

@@ -1,0 +1,23 @@
+img {
+  max-width: 100%;
+}
+.hero__img--img {
+  animation: imgs 1.5s ease-in-out;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+p {
+  color: #7a7a7a;
+}
+
+hr {
+  margin-top: 3rem auto 3.5rem auto;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1; 
+
+}
