@@ -1,0 +1,26 @@
+.faq{
+    margin: 6rem auto;
+    &__container{
+        h2{
+            text-align: center;
+            margin: 6rem auto;
+        }
+        width: 90%;
+        @media (min-width: 768px){
+            width: 66rem;
+        }
+    }
+    &__accordion-wrapper--title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:hover{
+            cursor: pointer;
+        }
+        span{
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

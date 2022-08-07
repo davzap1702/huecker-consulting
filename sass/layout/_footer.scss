@@ -33,6 +33,10 @@
         text-decoration: none;
         color: rgb(200, 200, 200);
         font-size: 1.8rem;
+        transition: 300ms;
+        &:hover{
+          color: #ffffff;
+        }
       }
     }
     &--social {
@@ -41,8 +45,12 @@
         color: rgb(200, 200, 200);
         font-size: 1.8rem;
         padding: 1rem;
+        transition: 300ms;
         &:first-of-type {
           padding-left: 0;
+        }
+        &:hover{
+          color: #ffffff;
         }
       }
       display: grid;

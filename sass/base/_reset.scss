@@ -2,13 +2,13 @@
 :root {
   --heading-font: "Inter", sans-serif;
   --body-font: "Roboto", sans-serif;
-  --primary-color: #000000;
-  --secondary-color: #593d3b;
-  --third-color: #FF725C;
+  --primary-color: #1c3879;
+  --secondary-color: rgb(71, 181, 255);
+  --third-color: #000;
 }
 
 html {
-  box-sizing: border-box;
+  box-sizing: border-box; 
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
@@ -28,3 +28,4 @@ h4 {
   font-family: var(--heading-font);
   animation: headings 1.5s ease-in-out;
 }
+//rgb(254,185,64)

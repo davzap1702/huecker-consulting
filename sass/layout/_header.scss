@@ -9,12 +9,12 @@ header {
   }
   nav a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--thrid-color);
     padding: 0.6rem 0rem;
   }
   nav a:hover {
     transform: scale(1.1);
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-decoration: underline;
   }
   .header__wrapper {

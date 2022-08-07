@@ -2,9 +2,9 @@
 :root {
   --heading-font: "Inter", sans-serif;
   --body-font: "Roboto", sans-serif;
-  --primary-color: #000000;
-  --secondary-color: #593d3b;
-  --third-color: #FF725C;
+  --primary-color: #1c3879;
+  --secondary-color: rgb(71, 181, 255);
+  --third-color: #000;
 }
 
 html {
@@ -115,6 +115,33 @@ hr {
   border-color: white;
 }
 
+.faq {
+  margin: 6rem auto;
+}
+.faq__container {
+  width: 90%;
+}
+.faq__container h2 {
+  text-align: center;
+  margin: 6rem auto;
+}
+@media (min-width: 768px) {
+  .faq__container {
+    width: 66rem;
+  }
+}
+.faq__accordion-wrapper--title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq__accordion-wrapper--title:hover {
+  cursor: pointer;
+}
+.faq__accordion-wrapper--title span:hover {
+  cursor: pointer;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -128,13 +155,13 @@ header {
 
 nav a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--thrid-color);
   padding: 0.6rem 0rem;
 }
 
 nav a:hover {
   transform: scale(1.1);
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-decoration: underline;
 }
 
@@ -231,6 +258,10 @@ nav a:hover {
   text-decoration: none;
   color: rgb(200, 200, 200);
   font-size: 1.8rem;
+  transition: 300ms;
+}
+.main-footer__section--links a:hover {
+  color: #ffffff;
 }
 .main-footer__section--social {
   display: grid;
@@ -241,9 +272,13 @@ nav a:hover {
   color: rgb(200, 200, 200);
   font-size: 1.8rem;
   padding: 1rem;
+  transition: 300ms;
 }
 .main-footer__section--social a:first-of-type {
   padding-left: 0;
+}
+.main-footer__section--social a:hover {
+  color: #ffffff;
 }
 @media (min-width: 850px) {
   .main-footer__section--social {
@@ -278,53 +313,6 @@ p {
   font-size: 1.9rem;
 }
 
-/* Content */
-.content {
-  margin: 10rem auto;
-  padding: 1rem 1rem;
-  background-color: #e9e0d7;
-  color: #625447;
-  text-align: center;
-}
-
-.content h2 {
-  font-size: 3rem;
-}
-
-.content__description img {
-  width: 27rem;
-}
-
-.content__description {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 0rem;
-  overflow: scroll;
-  width: 36rem;
-  margin: 0 auto;
-}
-@media (min-width: 768px) {
-  .content__description {
-    width: auto;
-    max-width: 1200px;
-  }
-}
-
-#ditat {
-  width: 40rem;
-}
-
-/* @media (min-width: 768px) {
-    .content__description {
-      display: flex;
-
-      flex-direction: row;
-      justify-content: center;
-      gap: 7rem;
-    }
-  } */
 /* Helper */
 .hide {
   display: none;
@@ -351,9 +339,6 @@ p {
   text-align: center;
   margin: 3rem 0;
 }
-.grid-3-info h3 {
-  color: var(--secondary-color);
-}
 .grid-3-info__container {
   text-align: center;
   display: flex;
@@ -372,7 +357,7 @@ p {
 }
 .grid-3-info i {
   font-size: 3rem;
-  color: #47B5FF;
+  color: var(--secondary-color);
 }
 
 /* Other section */
@@ -380,7 +365,7 @@ p {
   margin: 7rem auto;
 }
 .section__text h2 {
-  color: #1C3879;
+  color: var(--primary-color);
   font-size: 2.9rem;
 }
 .section__img {
@@ -418,7 +403,7 @@ p {
   grid-row: 1;
 }
 .section-2__text h2 {
-  color: #1C3879;
+  color: var(--primary-color);
   font-size: 2.9rem;
 }
 .section-2__img {
@@ -483,7 +468,7 @@ p {
 }
 .join-info .primary-btn {
   background-color: white;
-  color: #1C3879;
+  color: var(--primary-color);
 }
 
 .testimonies {
@@ -492,7 +477,7 @@ p {
 .testimonies h2 {
   text-align: center;
   font-size: 3rem;
-  color: #1C3879;
+  color: var(--primary-color);
 }
 .testimonies__card {
   margin: 4rem auto;
