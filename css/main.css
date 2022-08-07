@@ -290,6 +290,7 @@ nav a:hover {
 }
 
 .hero {
+  margin: 6rem auto;
   display: flex;
   flex-direction: column-reverse;
 }
