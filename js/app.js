@@ -27,13 +27,20 @@ const expandArrow = '<i class="fa-solid fa-angle-up"></i>';
 const collapseArrow = '<i class="fa-solid fa-angle-down"></i>';
 const carouselTitle = document.querySelectorAll('.faq__accordion-wrapper--title');
 
+document.addEventListener('DOMContentLoaded', () =>{
+    carouselTitle[0].click()
+})
+
 carouselTitle.forEach( title => {
     title.addEventListener('click', e => {
 try {
     if(e.target.parentElement.children[2].classList.contains('hide')){
         e.target.parentElement.children[2].classList.remove('hide')
+        e.target.children[1].innerHTML = expandArrow;
     }else{
         e.target.parentElement.children[2].classList.add('hide')
+        e.target.children[1].innerHTML = collapseArrow;
+
     }
 } catch (error) {
     e.target.parentElement.click()
