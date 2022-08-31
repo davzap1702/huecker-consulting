@@ -4,11 +4,13 @@
 //component
 @use 'components/buttons';
 @use 'components/accordion';
+@use 'components/links';
 //layout
 @use 'layout/header';
 @use 'layout/footer';
 //pages
 @use 'pages/home';
+@use 'pages/about';
 //vendors
 @use 'vendors/normalize';
 //animations

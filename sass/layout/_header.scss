@@ -12,11 +12,6 @@ header {
     color: var(--thrid-color);
     padding: 0.6rem 0rem;
   }
-  nav a:hover {
-    transform: scale(1.1);
-    color: var(--primary-color);
-    text-decoration: underline;
-  }
   .header__wrapper {
     margin: 1rem 0;
     display: flex;
