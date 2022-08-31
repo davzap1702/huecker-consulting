@@ -2,6 +2,12 @@
   margin: 6rem auto;
   display: flex;
   flex-direction: column-reverse;
+  .hero__description h1 {
+    animation: headings 1.2s ease-in-out;
+  }
+  .hero__description p{
+    animation: paragrafs 1.1s ease-out;
+  }
 }
 
 @media (min-width: 1040px) {
