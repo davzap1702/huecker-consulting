@@ -680,8 +680,10 @@ h1.services-title {
   margin: 3rem auto;
   gap: 4.5rem;
 }
-.services__section:nth-child(3), .services__section:nth-child(5) {
-  flex-direction: row-reverse;
+@media (min-width: 768px) {
+  .services__section:nth-child(3), .services__section:nth-child(5) {
+    flex-direction: row-reverse;
+  }
 }
 @media (min-width: 768px) {
   .services__section {

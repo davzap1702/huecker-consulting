@@ -12,7 +12,9 @@ h1.services-title {
     gap: 4.5rem;
     &:nth-child(3),
     &:nth-child(5) {
-      flex-direction: row-reverse;
+        @media (min-width:768px){
+            flex-direction: row-reverse;
+        }
     }
 
     @media (min-width: 768px) {
