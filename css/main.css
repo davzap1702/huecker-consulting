@@ -365,9 +365,12 @@ p {
   margin: 9rem 0;
 }
 .grid-3-info h2 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   text-align: center;
   margin: 3rem 0;
+}
+.grid-3-info h3 {
+  font-size: 2.3rem;
 }
 .grid-3-info__container {
   text-align: center;
@@ -386,7 +389,7 @@ p {
   }
 }
 .grid-3-info i {
-  font-size: 3rem;
+  font-size: 5rem;
   color: var(--secondary-color);
 }
 
@@ -662,6 +665,63 @@ p {
 .contact-section__info i {
   color: var(--primary-color);
   font-size: 6rem;
+}
+
+h1.services-title {
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+.services__section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem auto;
+  gap: 4.5rem;
+}
+.services__section:nth-child(3), .services__section:nth-child(5) {
+  flex-direction: row-reverse;
+}
+@media (min-width: 768px) {
+  .services__section {
+    margin: 9rem auto;
+    flex-direction: row;
+    align-items: center;
+    gap: 7rem;
+  }
+}
+.services__section h2 {
+  font-size: 3.2rem;
+  color: var(--primary-color);
+}
+@media (min-width: 768px) {
+  .services__section h2 {
+    font-size: 3.8rem;
+  }
+}
+.services__section p :nth-child(1) {
+  color: var(--secondary-color);
+  padding-left: 1rem;
+}
+.services__section p:not(p.p) {
+  color: black;
+}
+.services__section--img {
+  flex: 0 1 50%;
+}
+.services__section--info {
+  flex: 0 1 50%;
+}
+
+.solution {
+  margin-bottom: 9rem;
+}
+.solution__container {
+  text-align: center;
+}
+.solution__container h2 {
+  font-size: 4rem;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
